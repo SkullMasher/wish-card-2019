@@ -9,6 +9,11 @@ body {
   grid-template-rows: 1fr auto;
 }
 
+.place-center {
+  display: grid;
+  place-items: center;
+}
+
 .site-footer {
   grid-row-start: 2;
   grid-row-end: 3;
