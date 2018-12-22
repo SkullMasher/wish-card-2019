@@ -2768,7 +2768,10 @@ body {
 }
 
 .wishcard__sky {
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  padding-left: 1rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -2890,6 +2893,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.wishcard__message {
+  margin-bottom: 4rem;
+}
+
 .wishcard__signature {
   text-align: right;
 }
@@ -2897,7 +2904,7 @@ body {
 .wishcard__floor {
   display: grid;
   align-items: end;
-  height: 40vh;
+  height: 50vh;
 }
 
 .wishcard__ground {
@@ -2905,7 +2912,7 @@ body {
   align-items: end;
   position: relative;
   height: 20vh;
-  background-color: #ced4da;
+  background: linear-gradient(to left, #CFDEF3, #E0EAFC);
   border-radius: 50% 50% 49% 51% / 60% 62% 38% 40%;
 }
 
@@ -2913,7 +2920,7 @@ body {
   width: 100%;
   height: 8vh;
   bottom: 0;
-  background-color: #ced4da;
+  background: linear-gradient(to left, #CFDEF3, #E0EAFC);
 }
 
 .snowman {
@@ -2923,15 +2930,22 @@ body {
 }
 
 .snowman__hat {
+  position: relative;
   width: 40px;
   height: 45px;
-  background-color: red;
+  top: 7px;
+  left: 8px;
+  transform: rotate(10deg);
   border-radius: 62% 38% 46% 54% / 96% 89% 11% 4%;
+  background-image: linear-gradient(to bottom, #FF0037 80%, #F7F7F7 88%);
 }
 
 .snowman__pompon {
+  position: relative;
   width: 18px;
   height: 18px;
+  left: 14px;
+  bottom: 14px;
   clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
   background-color: #fff;
 }
@@ -2944,6 +2958,7 @@ body {
   height: 65px;
   border-radius: 47% 53% 43% 57% / 53% 48% 52% 47%;
   background-color: #fff;
+  box-shadow: inset -5px 0px 0px 0px #ddd;
 }
 
 .snowman__eyes {
@@ -2975,7 +2990,7 @@ body {
   top: -4px;
   right: 8px;
   border-radius: 71% 29% 11% 89% / 38% 21% 79% 62%;
-  background: linear-gradient(to bottom, #ca7f78, #b94b35);
+  background: linear-gradient(to top, #fc4a1a, #f7b733);
   transform: rotate(10deg);
 }
 
@@ -3016,6 +3031,7 @@ body {
   background-color: #fff;
   display: flex;
   flex-direction: column;
+  box-shadow: inset -7px 0px 0px 0px #e1e1e1;
 }
 
 .snowman__coat {

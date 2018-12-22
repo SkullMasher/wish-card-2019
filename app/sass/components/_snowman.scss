@@ -4,15 +4,22 @@
   align-items: center;
 
   &__hat {
+    position: relative;
     width: 40px;
     height: 45px;
-    background-color: red;
+    top: 7px;
+    left: 8px;
+    transform: rotate(10deg);
     border-radius: 62% 38% 46% 54% / 96% 89% 11% 4%;
+    background-image: linear-gradient(to bottom, #FF0037 80%, #F7F7F7 88%);
   }
 
     &__pompon {
+      position: relative;
       width: 18px;
       height: 18px;
+      left: 14px;
+      bottom: 14px;
       clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
       background-color: $white;
     }
@@ -25,70 +32,72 @@
     height: 65px;
     border-radius: 47% 53% 43% 57% / 53% 48% 52% 47%;
     background-color: $white;
+    box-shadow: inset -5px 0px 0px 0px #ddd;
+
   }
 
-  &__eyes {
-    position: relative;
-    top: 7px;
-    display: flex;
-    justify-content: space-around;
-  }
-
-    &__eye {
-      width: 10px;
-      height: 10px;
-      background-color: $gray-800;
-      border-radius: 50%;
-
-      &--right {
-        border-radius: 52% 48% 71% 29% / 32% 59% 41% 68%;
-      }
-
-      &--left {
-        border-radius: 38% 62% 45% 55% / 49% 59% 41% 51%;
-      }
-    }
-
-  &__nose {
-    position: relative;
-    width: 40px;
-    height: 10px;
-    top: -4px;
-    right: 8px;
-    border-radius: 71% 29% 11% 89% / 38% 21% 79% 62%;
-    background: linear-gradient(to bottom, #ca7f78, #b94b35);
-    transform: rotate(10deg);
-  }
-
-  &__mouth {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 $spacer-small;
-  }
-
-    &__rockteeth {
+    &__eyes {
       position: relative;
-      width: 6px;
-      height: 6px;
-      background-color: $gray-800;
-      border-radius: 60% 40% 61% 39% / 19% 52% 48% 81%;
-
-      &--alternate {
-        border-radius: 28% 72% 43% 57% / 58% 28% 72% 42%;
-      }
-
-      &:nth-child(1) {
-        top: -5px;
-      }
-
-      &:nth-child(3) {
-        top: -1px;
-      }
-
-      &:nth-child(4) {
-        top: -7px;
-      }
+      top: 7px;
+      display: flex;
+      justify-content: space-around;
     }
+
+      &__eye {
+        width: 10px;
+        height: 10px;
+        background-color: $gray-800;
+        border-radius: 50%;
+
+        &--right {
+          border-radius: 52% 48% 71% 29% / 32% 59% 41% 68%;
+        }
+
+        &--left {
+          border-radius: 38% 62% 45% 55% / 49% 59% 41% 51%;
+        }
+      }
+
+    &__nose {
+      position: relative;
+      width: 40px;
+      height: 10px;
+      top: -4px;
+      right: 8px;
+      border-radius: 71% 29% 11% 89% / 38% 21% 79% 62%;
+      background: linear-gradient(to top, #fc4a1a, #f7b733);
+      transform: rotate(10deg);
+    }
+
+    &__mouth {
+      display: flex;
+      justify-content: space-around;
+      margin: 0 $spacer-small;
+    }
+
+      &__rockteeth {
+        position: relative;
+        width: 6px;
+        height: 6px;
+        background-color: $gray-800;
+        border-radius: 60% 40% 61% 39% / 19% 52% 48% 81%;
+
+        &--alternate {
+          border-radius: 28% 72% 43% 57% / 58% 28% 72% 42%;
+        }
+
+        &:nth-child(1) {
+          top: -5px;
+        }
+
+        &:nth-child(3) {
+          top: -1px;
+        }
+
+        &:nth-child(4) {
+          top: -7px;
+        }
+      }
 
   &__trunk {
     width: 100px;
@@ -97,6 +106,7 @@
     background-color: $white;
     display: flex;
     flex-direction: column;
+    box-shadow: inset -7px 0px 0px 0px #e1e1e1;
   }
 
     &__coat {
@@ -107,26 +117,26 @@
       align-items: center;
     }
 
-    &__rockbutton {
-      width: 13px;
-      height: 13px;
-      background-color: $gray-800;
-      border-radius: 50%;
+      &__rockbutton {
+        width: 13px;
+        height: 13px;
+        background-color: $gray-800;
+        border-radius: 50%;
 
-      &:nth-child(1) {
-        border-radius: 61% 39% 39% 61% / 38% 36% 64% 62%;
-      }
+        &:nth-child(1) {
+          border-radius: 61% 39% 39% 61% / 38% 36% 64% 62%;
+        }
 
-      &:nth-child(2) {
-        border-radius: 48% 52% 81% 19% / 38% 63% 37% 62%;
-      }
+        &:nth-child(2) {
+          border-radius: 48% 52% 81% 19% / 38% 63% 37% 62%;
+        }
 
-      &:nth-child(3) {
-        border-radius: 35% 65% 65% 35% / 67% 60% 40% 33%;
-      }
+        &:nth-child(3) {
+          border-radius: 35% 65% 65% 35% / 67% 60% 40% 33%;
+        }
 
-      &:nth-child(4) {
-        border-radius: 22% 78% 35% 65% / 72% 23% 77% 28% ;
+        &:nth-child(4) {
+          border-radius: 22% 78% 35% 65% / 72% 23% 77% 28% ;
+        }
       }
-    }
 }
