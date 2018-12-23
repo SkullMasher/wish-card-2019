@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateY(50px);
 
   &__hat {
     position: relative;
@@ -33,7 +34,6 @@
     border-radius: 47% 53% 43% 57% / 53% 48% 52% 47%;
     background-color: $white;
     box-shadow: inset -5px 0px 0px 0px #ddd;
-
   }
 
     &__eyes {
@@ -41,6 +41,8 @@
       top: 7px;
       display: flex;
       justify-content: space-around;
+      margin: 0 .1rem;
+      animation: snowman-eyes 10s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
     }
 
       &__eye {
@@ -99,13 +101,36 @@
         }
       }
 
+  &__body {
+    display: flex;
+    align-items: center;
+  }
+
+  &__arm {
+    position: relative;
+    width: 50px;
+    height: 10px;
+    background-color: #B46E48;
+
+    &--left {
+      left: 14px;
+      bottom: 20px;
+      transform: rotate(30deg) skew(20deg);
+    }
+
+    &--right {
+      right: 20px;
+      bottom: 20px;
+      transform: rotate(-10deg) skew(-10deg);
+    }
+  }
+
   &__trunk {
     width: 100px;
     height: 100px;
     border-radius: 51% 49% 52% 48% / 58% 56% 44% 42%;
     background-color: $white;
     display: flex;
-    flex-direction: column;
     box-shadow: inset -7px 0px 0px 0px #e1e1e1;
   }
 
@@ -139,4 +164,17 @@
           border-radius: 22% 78% 35% 65% / 72% 23% 77% 28% ;
         }
       }
+}
+
+// Eyes animation
+@keyframes snowman-eyes {
+  95% {
+    transform: scaleY(1);
+  }
+  97% {
+    transform: scaleY(0.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }

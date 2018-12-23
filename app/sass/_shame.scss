@@ -14,6 +14,11 @@ body {
   place-items: center;
 }
 
+.vertical-align-center {
+  display: grid;
+  align-items: center;
+}
+
 .site-footer {
   grid-row-start: 2;
   grid-row-end: 3;

@@ -2721,6 +2721,13 @@ button:focus {
   display: none;
 }
 
+@font-face {
+  font-family: 'charm';
+  src: url("../font/charm/charm-regular-webfont.woff2") format("woff2"), url("../font/charm/charm-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 .color--success {
   color: #5CB85C;
 }
@@ -2752,6 +2759,11 @@ body {
   place-items: center;
 }
 
+.vertical-align-center {
+  display: grid;
+  align-items: center;
+}
+
 .site-footer {
   grid-row-start: 2;
   grid-row-end: 3;
@@ -2759,8 +2771,25 @@ body {
 }
 
 .wishcard {
-  max-width: 1200px;
-  margin: 1rem;
+  margin: 0;
+}
+
+@media (min-width: 768px) {
+  .wishcard {
+    width: 768px;
+  }
+}
+
+@media (min-width: 992px) {
+  .wishcard {
+    width: 992px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wishcard {
+    width: 1200px;
+  }
 }
 
 .wishcard__background {
@@ -2776,6 +2805,12 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 30vh;
+}
+
+@media (min-width: 768px) {
+  .wishcard__sky {
+    height: 20vh;
+  }
 }
 
 .wishcard__stars {
@@ -2894,32 +2929,25 @@ body {
 }
 
 .wishcard__message {
-  margin-bottom: 4rem;
+  margin-bottom: 1rem;
+  font-family: charm;
+  font-size: 2rem;
+}
+
+@media (min-width: 576px) {
+  .wishcard__message {
+    font-size: 2.4rem;
+  }
 }
 
 .wishcard__signature {
   text-align: right;
 }
 
-.wishcard__floor {
-  display: grid;
-  align-items: end;
-  height: 50vh;
-}
-
 .wishcard__ground {
-  display: grid;
-  align-items: end;
-  position: relative;
-  height: 20vh;
-  background: linear-gradient(to left, #CFDEF3, #E0EAFC);
-  border-radius: 50% 50% 49% 51% / 60% 62% 38% 40%;
-}
-
-.wishcard__ground--bottom {
-  width: 100%;
-  height: 8vh;
-  bottom: 0;
+  height: 100px;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
   background: linear-gradient(to left, #CFDEF3, #E0EAFC);
 }
 
@@ -2927,6 +2955,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateY(50px);
 }
 
 .snowman__hat {
@@ -2966,6 +2995,8 @@ body {
   top: 7px;
   display: flex;
   justify-content: space-around;
+  margin: 0 .1rem;
+  animation: snowman-eyes 10s cubic-bezier(0.39, 0.575, 0.565, 1) infinite both;
 }
 
 .snowman__eye {
@@ -3024,13 +3055,36 @@ body {
   top: -7px;
 }
 
+.snowman__body {
+  display: flex;
+  align-items: center;
+}
+
+.snowman__arm {
+  position: relative;
+  width: 50px;
+  height: 10px;
+  background-color: #B46E48;
+}
+
+.snowman__arm--left {
+  left: 14px;
+  bottom: 20px;
+  transform: rotate(30deg) skew(20deg);
+}
+
+.snowman__arm--right {
+  right: 20px;
+  bottom: 20px;
+  transform: rotate(-10deg) skew(-10deg);
+}
+
 .snowman__trunk {
   width: 100px;
   height: 100px;
   border-radius: 51% 49% 52% 48% / 58% 56% 44% 42%;
   background-color: #fff;
   display: flex;
-  flex-direction: column;
   box-shadow: inset -7px 0px 0px 0px #e1e1e1;
 }
 
@@ -3063,6 +3117,18 @@ body {
 
 .snowman__rockbutton:nth-child(4) {
   border-radius: 22% 78% 35% 65% / 72% 23% 77% 28%;
+}
+
+@keyframes snowman-eyes {
+  95% {
+    transform: scaleY(1);
+  }
+  97% {
+    transform: scaleY(0.1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
 }
 
 /*# sourceMappingURL=style.map.css */
