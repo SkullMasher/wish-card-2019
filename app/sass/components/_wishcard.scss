@@ -1,5 +1,8 @@
 .wishcard {
-  margin: 0;
+  margin-top: 0;
+  margin-right: $spacer-small;
+  margin-bottom: $spacer-medium;
+  margin-left: $spacer-small;
 
   @include respond-to("medium-up") {
     width: $medium;
@@ -150,11 +153,12 @@
   &__message {
     margin-bottom: $spacer-small;
     font-family: charm;
-    @include font-size(h3);
+    @include font-size(h2);
   }
 
   &__signature {
     text-align: right;
+    @include font-size(h3);
   }
 
   &__ground {

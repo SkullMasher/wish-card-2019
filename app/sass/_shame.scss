@@ -9,14 +9,17 @@ body {
   grid-template-rows: 1fr auto;
 }
 
+.font-charm {
+  font-family: charm;
+}
+
 .place-center {
   display: grid;
   place-items: center;
 }
 
-.vertical-align-center {
-  display: grid;
-  align-items: center;
+.site-hero {
+  margin-bottom: $spacer-medium;
 }
 
 .site-footer {
