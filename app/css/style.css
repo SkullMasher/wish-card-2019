@@ -2770,7 +2770,10 @@ body {
 .site-footer {
   grid-row-start: 2;
   grid-row-end: 3;
-  margin: 1rem;
+  margin-top: 0;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
 }
 
 .wishcard {
@@ -2829,10 +2832,10 @@ body {
 }
 
 .wishcard__stars:nth-child(2) {
-  width: 3px;
-  height: 3px;
+  width: 10px;
+  height: 10px;
   background-color: #fff;
-  opacity: .3;
+  opacity: .6;
   align-self: flex-end;
   margin-bottom: 4rem;
   clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
@@ -2841,13 +2844,15 @@ body {
 .wishcard__stars:nth-child(3) {
   width: 4px;
   height: 4px;
-  opacity: .2;
+  opacity: .4;
   align-self: flex-start;
   margin-top: 1rem;
 }
 
 .wishcard__stars:nth-child(4) {
-  opacity: .2;
+  width: 3px;
+  height: 3px;
+  opacity: 1;
   margin-bottom: 4rem;
 }
 
@@ -2880,13 +2885,17 @@ body {
 }
 
 .wishcard__stars:nth-child(9) {
+  width: 3px;
+  height: 3px;
   opacity: .5;
   margin-bottom: 2rem;
 }
 
 .wishcard__stars:nth-child(10) {
+  width: 3px;
+  height: 3px;
   align-self: flex-start;
-  opacity: .2;
+  opacity: .81;
   margin-top: 2rem;
 }
 
@@ -2904,11 +2913,13 @@ body {
 }
 
 .wishcard__stars:nth-child(13) {
-  opacity: .2;
+  opacity: .4;
   margin-bottom: 4rem;
 }
 
 .wishcard__stars:nth-child(14) {
+  width: 4px;
+  height: 4px;
   opacity: .9;
   margin-top: 4rem;
 }
@@ -2923,6 +2934,8 @@ body {
 }
 
 .wishcard__stars:nth-child(16) {
+  width: 3px;
+  height: 3px;
   align-self: flex-end;
   opacity: 1;
   margin-top: 2rem;
