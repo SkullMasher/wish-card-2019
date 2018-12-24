@@ -2732,6 +2732,18 @@ button:focus {
   color: #5CB85C;
 }
 
+.background--gray100 {
+  background-color: #f8f9fa;
+}
+
+.background--gray900 {
+  background-color: #212529;
+}
+
+.background--gradientgray {
+  background: linear-gradient(to top, #333, #212529);
+}
+
 .wrapper {
   max-width: 960px;
   margin-right: auto;
