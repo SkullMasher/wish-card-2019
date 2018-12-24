@@ -3,6 +3,6 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 
 ## Roadmap
 - ~~Front end~~
-- merge the front end build tools in a slim skeleton app
+- ~~Merge the front end build tools in a slim skeleton app~~
 - Add PostgreSQL dependencie
 - Add respect/validation dependencie
