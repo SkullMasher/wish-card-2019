@@ -7,16 +7,15 @@ let dateFormat = require('dateformat')
 let sass = require('node-sass')
 let bs = require('browser-sync').create()
 
-// console.log for 1337 h4X0r
-let log = console.log.bind(console)
+let log = console.log.bind(console) // console.log for 1337 h4X0r
 
 // add a '/' at the end
 let appPath = {
-  appFolderPath: 'app/',
-  cssFolderName: 'css/',
-  sassFolderName: 'sass/',
-  jsFolderName: 'js/',
-  imgFolderName: 'css/'
+  appFolderPath: './',
+  cssFolderName: 'public/css/',
+  sassFolderName: 'src/sass/',
+  jsFolderName: 'public/js/',
+  imgFolderName: 'public/img/'
 }
 
 // Set to true for serving php for exemple
@@ -43,11 +42,11 @@ let greetingMessage = function () {
 
 greetingMessage()
 
-// Reload all browser on HTML & PHP change
+// Reload all browser on PHP & pHTML (php in html) change
 bs.watch(appPath.appFolderPath + '**/*.php').on('change', function () {
   bs.reload()
 })
-bs.watch(appPath.appFolderPath + '**/*.html').on('change', function () {
+bs.watch(appPath.appFolderPath + '**/*.phtml').on('change', function () {
   bs.reload()
 })
 

@@ -18,7 +18,7 @@ $app->get('/', function (Request $request, Response $response, array $args) {
     $this->logger->info("Slim-Skeleton '/' route");
 
     // Render index view
-    return $this->renderer->render($response, 'index.html', $args);
+    return $this->renderer->render($response, 'index.phtml', $args);
 });
 
 $app->get('/sharewish', function (Request $request, Response $response, array $args) {
@@ -26,7 +26,7 @@ $app->get('/sharewish', function (Request $request, Response $response, array $a
     $this->logger->info("Slim-Skeleton '/sharewish' route");
 
     // Render index view
-    return $this->renderer->render($response, 'sharewish.html', $args);
+    return $this->renderer->render($response, 'sharewish.phtml', $args);
 });
 
 $app->get('/wish', function (Request $request, Response $response, array $args) {
@@ -34,5 +34,5 @@ $app->get('/wish', function (Request $request, Response $response, array $args) 
     $this->logger->info("Slim-Skeleton '/wish' route");
 
     // Render index view
-    return $this->renderer->render($response, 'wish.html', $args);
+    return $this->renderer->render($response, 'wish.phtml', $args);
 });
