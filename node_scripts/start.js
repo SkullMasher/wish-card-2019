@@ -20,10 +20,10 @@ let appPath = {
 }
 
 // Set to true for serving php for exemple
-let isProxy = false
+let isProxy = true
 
 // If isProxy is enable specify the path URL where the project files are
-let proxyURL = 'http://localhost/~user/wordpress-site/'
+let proxyURL = 'http://skull.ayax/~skullmasher/wish-card-2019/'
 
 /*
  * You should not have to edit stuff beyond this warning
