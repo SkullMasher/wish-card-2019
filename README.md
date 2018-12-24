@@ -4,5 +4,8 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 ## Roadmap
 - ~~Front end~~
 - ~~Merge the front end build tools in a slim skeleton app~~
-- Add PostgreSQL dependencie
+- Handle error on wish form with Javascript.
+- Add CSRF protection dependencie
+- Add flash message dependencie
 - Add respect/validation dependencie
+- Add PostgreSQL dependencie

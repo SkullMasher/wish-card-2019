@@ -10,6 +10,10 @@
 <body class="background--gradientgray">
   <div class="place-center">
     <div>
+      <header></header>
+      <h1><?php if (isset($wishid)) {
+        echo "Hello There ! " . htmlspecialchars($wishid);
+      } ?></h1>
       <main>
         <div class="wishcard">
           <div class="wishcard__background">

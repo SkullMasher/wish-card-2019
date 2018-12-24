@@ -5,34 +5,27 @@ use Slim\Http\Response;
 
 // Routes
 
-// $app->get('/[{name}]', function (Request $request, Response $response, array $args) {
-//     // Sample log message
-//     $this->logger->info("Slim-Skeleton '/' route");
-
-//     // Render index view
-//     return $this->renderer->render($response, 'index.phtml', $args);
-// });
-
 $app->get('/', function (Request $request, Response $response, array $args) {
-    // Sample log message
-    $this->logger->info("Slim-Skeleton '/' route");
+    $this->logger->info('GET /');
 
-    // Render index view
     return $this->renderer->render($response, 'index.phtml', $args);
+})->setName('index');
+
+$app->post('/', function (Request $request, Response $response, array $args) {
+    $this->logger->info('POST /');
+
+    $url = $this->router->pathFor('index');
+    return $response->withRedirect($url, 303);
 });
 
 $app->get('/sharewish', function (Request $request, Response $response, array $args) {
-    // Sample log message
-    $this->logger->info("Slim-Skeleton '/sharewish' route");
+    $this->logger->info('GET /sharewish');
 
-    // Render index view
     return $this->renderer->render($response, 'sharewish.phtml', $args);
 });
 
-$app->get('/wish', function (Request $request, Response $response, array $args) {
-    // Sample log message
-    $this->logger->info("Slim-Skeleton '/wish' route");
+$app->get('/wish/[{wishid}]', function (Request $request, Response $response, array $args) {
+    $this->logger->info('GET /wish/');
 
-    // Render index view
     return $this->renderer->render($response, 'wish.phtml', $args);
 });
