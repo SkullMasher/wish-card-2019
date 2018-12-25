@@ -1,8 +1,10 @@
 .snowman {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateY(50px);
+  filter: drop-shadow(10px 10px 5px rgba(0,0,0,0.3));
+
 
   &__hat {
     position: relative;
@@ -42,7 +44,7 @@
       display: flex;
       justify-content: space-around;
       margin: 0 .1rem;
-      animation: snowman-eyes 7s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+      animation: snowman-eyes 5s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
     }
 
       &__eye {

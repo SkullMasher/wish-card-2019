@@ -3,6 +3,7 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 
 ## Roadmap
 - ~~Front end~~
+- Make a xmas tree
 - ~~Merge the front end build tools in a slim skeleton app~~
 - Handle error on wish form with Javascript.
 - Add CSRF protection dependencie
