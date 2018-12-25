@@ -49,7 +49,6 @@
       width: 10px;
       height: 10px;
       background-color: $white;
-      // opacity: .6;
       align-self: flex-end;
       margin-bottom: $spacer-large;
       clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
@@ -59,9 +58,10 @@
     &:nth-child(3) {
       width: 4px;
       height: 4px;
-      opacity: .4;
+      opacity: 1;
       align-self: flex-start;
       margin-top: $spacer-small;
+      animation: 4s 1s fade infinite;
     }
 
     &:nth-child(4) {
@@ -69,6 +69,7 @@
       height: 3px;
       opacity: 1;
       margin-bottom: $spacer-large;
+      animation: 7s fade infinite;
     }
 
     &:nth-child(5) {
@@ -80,8 +81,9 @@
       height: 10px;
       clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
       align-self: flex-start;
-      opacity: .7;
+      opacity: 1;
       margin-top: $spacer-medium;
+      animation: 5s 3s fade infinite;
     }
 
     &:nth-child(7) {
@@ -93,9 +95,10 @@
     &:nth-child(8) {
       width: 4px;
       height: 4px;
-      opacity: .8;
+      opacity: 1;
       margin-top: $spacer-medium;
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+      animation: 5s 5s fade infinite;
     }
 
     &:nth-child(9) {
@@ -109,8 +112,9 @@
       width: 3px;
       height: 3px;
       align-self: flex-start;
-      opacity: .81;
+      opacity: .1;
       margin-top: $spacer-medium;
+      animation: 7s 1s fade infinite;
     }
 
     &:nth-child(11) {
@@ -137,14 +141,17 @@
       height: 4px;
       opacity: .9;
       margin-top: $spacer-large;
+      animation: 4s 1s fade infinite;
     }
+
     &:nth-child(15) {
       width: 10px;
       height: 10px;
       align-self: flex-start;
-      opacity: .7;
+      opacity: 1;
       margin-top: $spacer-medium;
       clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
+      animation: 4s 3s fade infinite;
     }
 
     &:nth-child(16) {
@@ -153,6 +160,7 @@
       align-self: flex-end;
       opacity: 1;
       margin-top: $spacer-medium;
+      animation: 7s 1s fade infinite;
     }
 
     &:nth-child(17) {
