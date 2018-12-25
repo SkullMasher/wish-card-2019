@@ -1,6 +1,4 @@
 .christmastree {
-  // position: absolute;
-  // z-index: -1;
   bottom: 0;
   left: 20px;
   display: flex;
@@ -14,7 +12,6 @@
       margin-bottom: -5px;
       background-color: #FCE415;
       clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
-      // animation: shadow-drop-center 0.4s infinite cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     }
 
     &__triangle {
@@ -24,7 +21,7 @@
       clip-path: polygon(35% 0, 66% 0, 100% 100%, 0% 100%);
 
       &:nth-child(2) {
-      clip-path: polygon(50% 0%, 0% 100%, 100% 100%); // triangle
+        clip-path: polygon(50% 0%, 0% 100%, 100% 100%); // triangle
         position: relative;
       }
     }
