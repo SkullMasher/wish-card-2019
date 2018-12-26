@@ -3,7 +3,8 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 
 ## Roadmap
 - ~~Make a xmas tree~~
-- hills and more shooting stars
+- ~~more shooting stars~~
+- hills
 - rotage moon 60deg
 - Move the snowman arm
 - More animation
@@ -14,3 +15,21 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 - Add flash message dependencie
 - Add respect/validation dependencie
 - Add PostgreSQL dependencie
+
+## Credits, Inspiration and tools
+
+Thanks to all the awesome people involved below ! It trully helped me fall in love even more with css. I can't believe everything that I can do with the langage.
+
+[MDN](https://developer.mozilla.org) - I mean it's THE web doc. When in doubt or want to find that secret magic sauce you might possibly need it's the place to go.
+
+Easy css clip-path with [clippy](https://bennettfeely.com/clippy/) by [Bennett Feely](https://bennettfeely.com/)
+
+Colors, choosen by the awesome [Picular](https://picular.co/) website. Type keyword, get colors ! I probably found this tool on [Staphanie Walter blog/feed](https://stephaniewalter.design/).
+
+Shooting stars code inspired from [Alex Marple pen](https://codepen.io/alexmarple/pen/moBuj).
+
+Snowman inspiration from [Heather Shar](https://codepen.io/heatheraislinn/pen/maRzbN) and others.
+
+Back end code handle by the php [slim framework](https://www.slimframework.com). My goto php framework for the small amount of backend code I wrote from times to times.
+
+[Layout Land](https://www.youtube.com/channel/UC7TizprGknbDalbHplROtag/videos) is a goldmine of modern css knowledge. It's for me the key thing that got me into true modern, best practice CSS. [Jen Simmons] work is pushing grumpy nerd like me in front end future.
