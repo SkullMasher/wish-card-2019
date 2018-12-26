@@ -7,20 +7,22 @@
   filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.3));
 
     &__star {
-      width: 25px;
-      height: 25px;
+      width: 35px;
+      height: 35px;
       margin-bottom: -5px;
       background-color: #FCE415;
       clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     }
 
     &__triangle {
-      width: 75px;
+      width: 100px;
       height: 50px;
       background-color: #0BC917;
       clip-path: polygon(35% 0, 66% 0, 100% 100%, 0% 100%);
 
       &:nth-child(2) {
+        width: 75px;
+        height: 50px;
         clip-path: polygon(50% 0%, 0% 100%, 100% 100%); // triangle
         position: relative;
       }
@@ -28,7 +30,7 @@
 
     &__trunk {
       width: 20px;
-      height: 50px;
+      height: 40px;
       background-color: #705F2A;
     }
 }

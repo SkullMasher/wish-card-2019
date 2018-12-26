@@ -7,20 +7,20 @@
 
   &__hat {
     position: relative;
-    width: 40px;
+    width: 42px;
     height: 45px;
-    top: 7px;
-    left: 8px;
-    transform: rotate(10deg);
+    top: 10px;
+    left: 15px;
+    transform: rotate(19deg);
     border-radius: 62% 38% 46% 54% / 96% 89% 11% 4%;
-    background-image: linear-gradient(to bottom, #FF0037 80%, #F7F7F7 88%);
+    background-image: linear-gradient(to bottom, #FF0037 70%, #F7F7F7 78%);
   }
 
     &__pompon {
       position: relative;
       width: 18px;
       height: 18px;
-      left: 14px;
+      left: 18px;
       bottom: 14px;
       clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
       background-color: $white;

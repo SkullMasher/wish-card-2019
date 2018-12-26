@@ -3111,20 +3111,20 @@ body {
 
 .snowman__hat {
   position: relative;
-  width: 40px;
+  width: 42px;
   height: 45px;
-  top: 7px;
-  left: 8px;
-  transform: rotate(10deg);
+  top: 10px;
+  left: 15px;
+  transform: rotate(19deg);
   border-radius: 62% 38% 46% 54% / 96% 89% 11% 4%;
-  background-image: linear-gradient(to bottom, #FF0037 80%, #F7F7F7 88%);
+  background-image: linear-gradient(to bottom, #FF0037 70%, #F7F7F7 78%);
 }
 
 .snowman__pompon {
   position: relative;
   width: 18px;
   height: 18px;
-  left: 14px;
+  left: 18px;
   bottom: 14px;
   clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
   background-color: #fff;
@@ -3292,28 +3292,30 @@ body {
 }
 
 .christmastree__star {
-  width: 25px;
-  height: 25px;
+  width: 35px;
+  height: 35px;
   margin-bottom: -5px;
   background-color: #FCE415;
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
 .christmastree__triangle {
-  width: 75px;
+  width: 100px;
   height: 50px;
   background-color: #0BC917;
   clip-path: polygon(35% 0, 66% 0, 100% 100%, 0% 100%);
 }
 
 .christmastree__triangle:nth-child(2) {
+  width: 75px;
+  height: 50px;
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   position: relative;
 }
 
 .christmastree__trunk {
   width: 20px;
-  height: 50px;
+  height: 40px;
   background-color: #705F2A;
 }
 
