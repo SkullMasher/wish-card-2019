@@ -2779,28 +2779,6 @@ body {
   margin-bottom: 2rem;
 }
 
-.shooting-star {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-  clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
-  align-self: flex-start;
-  opacity: 0;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-}
-
-.shooting-star:nth-child(1) {
-  animation-name: shoot-star-right;
-}
-
-.shooting-star:nth-child(2) {
-  right: 10px;
-  animation-delay: 3s;
-  animation-name: shoot-star-left;
-}
-
 .site-footer {
   grid-row-start: 2;
   grid-row-end: 3;
@@ -2831,40 +2809,6 @@ body {
   }
   to {
     opacity: 1;
-  }
-}
-
-@keyframes shoot-star-left {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  93% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(-280px, 30px);
-    opacity: 0;
-  }
-}
-
-@keyframes shoot-star-right {
-  0% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0;
-    transform: translate(0, 0);
-  }
-  93% {
-    opacity: 1;
-  }
-  100% {
-    transform: translate(280px, 150px);
-    opacity: 0;
   }
 }
 
@@ -3099,6 +3043,98 @@ body {
   border-top-left-radius: 33%;
   border-top-right-radius: 33%;
   background: linear-gradient(to left, #CFDEF3, #E0EAFC);
+}
+
+.shooting-star {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
+  align-self: flex-start;
+  opacity: 0;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+.shooting-star:nth-child(1) {
+  left: 10px;
+  animation-name: shoot-star-right;
+}
+
+.shooting-star:nth-child(2) {
+  right: 10px;
+  animation-delay: 3s;
+  animation-name: shoot-star-left;
+}
+
+.shooting-star:nth-child(3) {
+  right: 40%;
+  animation-delay: 6s;
+  animation-name: shoot-star-downleft;
+}
+
+.shooting-star:nth-child(4) {
+  left: 30%;
+  top: 100%;
+  animation-delay: 2s;
+  animation-name: shoot-star-upright;
+}
+
+@keyframes shoot-star-left {
+  20% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  23% {
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-280px, 30px);
+    opacity: 0;
+  }
+}
+
+@keyframes shoot-star-downleft {
+  50% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  53% {
+    opacity: 1;
+  }
+  70% {
+    transform: translate(-50px, 150px);
+    opacity: 0;
+  }
+}
+
+@keyframes shoot-star-right {
+  10% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  13% {
+    opacity: 1;
+  }
+  40% {
+    transform: translate(280px, 150px);
+    opacity: 0;
+  }
+}
+
+@keyframes shoot-star-upright {
+  70% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  73% {
+    opacity: 1;
+  }
+  90% {
+    transform: translate(50px, -150px);
+    opacity: 0;
+  }
 }
 
 .snowman {
