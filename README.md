@@ -3,9 +3,10 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 
 ## Roadmap
 - ~~Make a xmas tree~~
+- more stars
 - ~~more shooting stars~~
 - hills
-- rotage moon 60deg
+- ~~rotage moon 60deg~~
 - Move the snowman arm
 - More animation
 - Make the wishcard appear after a first page with the book effect.
