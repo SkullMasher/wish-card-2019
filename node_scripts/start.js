@@ -22,7 +22,7 @@ let appPath = {
 let isProxy = true
 
 // If isProxy is enable specify the path URL where the project files are
-let proxyURL = 'http://skull.ayax/~skullmasher/wish-card-2019/'
+let proxyURL = 'http://localhost/~skullmasher/wish-card-2019/'
 
 /*
  * You should not have to edit stuff beyond this warning
