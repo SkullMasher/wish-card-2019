@@ -114,15 +114,18 @@
     background-color: #B46E48;
 
     &--left {
-      left: 14px;
-      bottom: 20px;
-      transform: rotate(30deg) skew(20deg);
+      left: 12px;
+      transform-origin:right bottom;
+      transform: rotate(20deg) skew(20deg);
+      animation: 5s arm-left infinite;
     }
 
     &--right {
       right: 20px;
       bottom: 20px;
+      transform-origin:left bottom;
       transform: rotate(-10deg) skew(-10deg);
+      animation: 4.42s arm-right infinite;
     }
   }
 
@@ -177,5 +180,24 @@
   }
   100% {
     transform: scaleY(1);
+  }
+}
+
+// Arm animation
+@keyframes arm-left {
+  0%, 100% {
+    transform: rotate(20deg) skew(15deg);
+  }
+  50% {
+    transform: rotate(50deg) skew(15deg);
+  }
+}
+
+@keyframes arm-right {
+  0%, 100% {
+    transform: rotate(-10deg) skew(-10deg);
+  }
+  50% {
+    transform: rotate(-20deg) skew(-10deg);
   }
 }

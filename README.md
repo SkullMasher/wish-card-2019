@@ -3,7 +3,7 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 
 ## Roadmap
 - ~~Make a xmas tree~~
-- more stars
+- ~~more stars~~
 - ~~more shooting stars~~
 - hills
 - ~~rotage moon 60deg~~
