@@ -5,17 +5,19 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 - ~~Make a xmas tree~~
 - ~~more stars~~
 - ~~more shooting stars~~
-- hills
 - ~~rotage moon 60deg~~
-- Move the snowman arm
-- More animation
-- Make the wishcard appear after a first page with the book effect.
+- ~~Move the snowman arm~~
+- ~~More animation~~
 - ~~Merge the front end build tools in a slim skeleton app~~
 - Handle error on wish form with Javascript.
 - Add CSRF protection dependencie
 - Add flash message dependencie
 - Add respect/validation dependencie
 - Add PostgreSQL dependencie
+
+Optional bonus style pouint :
+- optional: hills
+- Make the wishcard appear after a first page with the book effect.
 
 ## Credits, Inspiration and tools
 
