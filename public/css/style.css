@@ -2884,7 +2884,7 @@ body {
   opacity: 1;
   align-self: flex-start;
   margin-top: 1rem;
-  animation: 4s 1s fade infinite;
+  animation: 4s .1s fade infinite;
 }
 
 .wishcard__stars:nth-child(4) {
@@ -2898,6 +2898,7 @@ body {
 .wishcard__stars:nth-child(5) {
   opacity: .9;
   margin-top: 4rem;
+  animation: 3.5s fade infinite;
 }
 
 .wishcard__stars:nth-child(6) {
@@ -2907,7 +2908,7 @@ body {
   align-self: flex-start;
   opacity: 1;
   margin-top: 2rem;
-  animation: 5s 3s fade infinite;
+  animation: 5s .3s fade infinite;
 }
 
 .wishcard__stars:nth-child(7) {
@@ -2922,7 +2923,7 @@ body {
   opacity: 1;
   margin-top: 2rem;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-  animation: 5s 5s fade infinite;
+  animation: 5s .5s fade infinite;
 }
 
 .wishcard__stars:nth-child(9) {
@@ -2930,6 +2931,7 @@ body {
   height: 3px;
   opacity: .5;
   margin-bottom: 2rem;
+  animation: 2s fade infinite;
 }
 
 .wishcard__stars:nth-child(10) {
@@ -2944,6 +2946,7 @@ body {
 .wishcard__stars:nth-child(11) {
   opacity: 1;
   margin-top: 4rem;
+  animation: 5s fade infinite;
 }
 
 .wishcard__stars:nth-child(12) {
@@ -2958,6 +2961,7 @@ body {
 .wishcard__stars:nth-child(13) {
   opacity: .4;
   margin-bottom: 4rem;
+  animation: 6s .42s fade infinite;
 }
 
 .wishcard__stars:nth-child(14) {
@@ -2992,6 +2996,46 @@ body {
   height: 3px;
   opacity: .65;
   margin-bottom: 2rem;
+  animation: 2.48s fade infinite;
+}
+
+.wishcard__stars:nth-child(18) {
+  width: 2px;
+  height: 2px;
+  opacity: .65;
+  margin-bottom: 4rem;
+  animation: 10s fade infinite;
+}
+
+.wishcard__stars:nth-child(19) {
+  width: 2px;
+  height: 2px;
+  align-self: flex-start;
+  margin-top: 1rem;
+  animation: 3.5s fade infinite;
+}
+
+.wishcard__stars:nth-child(20) {
+  width: 2px;
+  height: 2px;
+  align-self: flex-end;
+  margin-top: 4rem;
+  animation: 6.66s fade infinite;
+}
+
+.wishcard__stars:nth-child(21) {
+  width: 2px;
+  height: 2px;
+  margin-bottom: -1rem;
+  animation: 2.555s .2s fade infinite;
+}
+
+.wishcard__stars:nth-child(22) {
+  width: 10px;
+  height: 10px;
+  clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
+  margin-bottom: -4rem;
+  animation: 4s .2s fade infinite;
 }
 
 .wishcard__moon {
