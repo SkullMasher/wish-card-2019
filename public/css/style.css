@@ -2728,6 +2728,14 @@ button:focus {
   font-style: normal;
 }
 
+.color--muted {
+  color: #e7e9ed;
+}
+
+.color--primary {
+  color: #0275D8;
+}
+
 .color--success {
   color: #5CB85C;
 }
