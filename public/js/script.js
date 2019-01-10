@@ -11,15 +11,15 @@ const greetingMessage = () => {
 
 let formChecker = () => {
   // input selector
-  let $wishText = document.querySelector('.js-wishText')
-  let $wishSign = document.querySelector('.js-wishSign')
-  let $wishSubmit = document.querySelector('.js-wishSubmit')
-  let $wishWarn = document.querySelector('.js-wishWarn')
+  const $wishText = document.querySelector('.js-wishText')
+  const $wishSign = document.querySelector('.js-wishSign')
+  const $wishSubmit = document.querySelector('.js-wishSubmit')
+  const $wishWarn = document.querySelector('.js-wishWarn')
   // states
   let wishTextIsDirty = false
   let wishSignIsDirty = false
   // functions
-  let isWishCompleted = () => {
+  const isWishCompleted = () => {
     if (wishTextIsDirty && wishSignIsDirty) {
       $wishWarn.classList.add('is-hidden')
       $wishSubmit.classList.remove('js-disabled')
@@ -58,7 +58,6 @@ let formChecker = () => {
     // if (isWishCompleted()) {
     // }
     const data = JSON.stringify([$wishText.innerHTML, $wishSign.innerHTML])
-    // const data = [$wishText.innerHTML]
     postWish(`${location.href}topkek`, data)
   })
 }
