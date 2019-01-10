@@ -1,5 +1,5 @@
 # Database credentials
-settings/database.php
+src/settings/database.php
 
 # Logs
 logs
