@@ -17,18 +17,13 @@ $container['logger'] = function ($c) {
   return $logger;
 };
 
-// Service factory for the ORM
-$container['db'] = function ($container) {
-  $capsule = new \Illuminate\Database\Capsule\Manager;
-  $capsule->addConnection($container['settings']['db']);
-
-  $capsule->setAsGlobal();
-  $capsule->bootEloquent();
-
-  return $capsule;
-};
+// Eloquent initiate the tables models
+$capsule = new \Illuminate\Database\Capsule\Manager;
+$capsule->addConnection($container['settings']['db']);
+$capsule->setAsGlobal();
+$capsule->bootEloquent();
 
 // Service for handling Wish
 $container['wish_service'] = function ($c) {
-  return new WishService($c['logger'], $c['db']);
+  return new WishService($c['logger']);
 };
