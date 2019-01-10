@@ -29,6 +29,6 @@ $container['db'] = function ($container) {
 };
 
 // Service for handling Wish
-$container['wish_service'] = function ($c) {
-    return new \services\WishService();
+$container['wishService'] = function ($c) {
+    return new WishService;
 };

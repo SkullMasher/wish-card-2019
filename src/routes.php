@@ -33,7 +33,5 @@ $app->post('/topkek', function (Request $request, Response $response) {
   $this->logger->info('POST /topkek');
   $data = $request->getParsedBody();
 
-  return json_encode('kek');
-
-  // return $this->wishService->createWish($data);
+  return $this->wishService->createWish($data);
 });
