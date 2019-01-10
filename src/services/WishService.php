@@ -37,7 +37,7 @@ class WishService {
 
   public function getWish($seed) {
     $wishExist = $this->wish->where('seed', '=', $seed)->exists();
-    $wish = $this->wish->where('seed', '=', $seed)->get();
+    $wish = $this->wish->where('seed', '=', $seed)->first();
 
     if ($wishExist) {
       return $wish;

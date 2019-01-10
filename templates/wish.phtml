@@ -18,6 +18,10 @@
         <div class="wishcard">
           <div class="wishcard__background">
             <header class="wishcard__sky">
+              <div class="shooting-star"></div>
+              <div class="shooting-star"></div>
+              <div class="shooting-star"></div>
+              <div class="shooting-star"></div>
               <div class="wishcard__stars"></div>
               <div class="wishcard__stars"></div>
               <div class="wishcard__stars"></div>
@@ -40,16 +44,23 @@
             </header>
             <main class="wrapper wrapper--small">
               <div class="font-charm">
-                <div class="wishcard__message" contenteditable="">
-                  <p>Chère visiteur,</p>
-                  <p>Compose ton message içi pour partager tes meilleurs voeux.</p>
+                <div class="wishcard__message js-wishText">
+                  <?php echo $message ?>
                 </div>
-                <div class="wishcard__signature" contenteditable="">
-                  <p>Ma signature</p>
+                <div class="wishcard__signature js-wishSign">
+                  <?php echo $signature ?>
                 </div>
               </div>
             </main>
             <footer class="wishcard__floor">
+              <div class="christmastree">
+                <div class="star-filter">
+                  <div class="christmastree__star"></div>
+                </div>
+                <div class="christmastree__triangle"></div>
+                <div class="christmastree__triangle"></div>
+                <div class="christmastree__trunk"></div>
+              </div>
               <div class="snowman">
                 <div class="snowman__hat">
                   <div class="snowman__pompon"></div>
@@ -80,8 +91,8 @@
                   <div class="snowman__arm snowman__arm--right"></div>
                 </div>
               </div>
-              <div class="wishcard__ground"></div>
             </footer>
+            <div class="wishcard__ground"></div>
           </div>
         </div>
       </main>
