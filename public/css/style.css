@@ -2822,29 +2822,28 @@ body {
 
 .wishcard {
   margin-top: 0;
-  margin-right: 1rem;
   margin-bottom: 2rem;
-  margin-left: 1rem;
   border: 0.5rem solid #fff;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.48), 0 6px 14px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 4px 11px rgba(0, 0, 0, 0.48), 0 7px 17px rgba(0, 0, 0, 0.28);
 }
 
 @media (min-width: 576px) {
   .wishcard {
+    width: 570px;
     border: 1rem solid #fff;
   }
 }
 
 @media (min-width: 768px) {
   .wishcard {
-    width: 768px;
+    width: 760px;
     border: 2rem solid #fff;
   }
 }
 
 @media (min-width: 992px) {
   .wishcard {
-    width: 992px;
+    width: 985px;
     border: 4rem solid #fff;
   }
 }
