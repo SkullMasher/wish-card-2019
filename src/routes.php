@@ -5,6 +5,7 @@ use Slim\Http\Response;
 
 // Routes
 $app->get('/[{wishSeed}]', function (Request $request, Response $response, array $args) {
+  $indexURL = $this->router->pathFor('index');
 
   if (isset($args['wishSeed'])) {
     $wishSeed = $args['wishSeed'];
@@ -13,10 +14,9 @@ $app->get('/[{wishSeed}]', function (Request $request, Response $response, array
     if ($wishSeed_length === 6) {
       $wish = $this->wish_service->getWish($wishSeed);
       if ($wish === null) {
-        return $this->renderer->render($response, 'index.phtml');
+        return $response->withRedirect($indexURL, 303);
       } else {
         $this->logger->info('GET /' . $wishSeed);
-
         return $this->renderer->render($response, 'wish.phtml', [
           'seed' => $wishSeed,
           'message' => $wish->message,
@@ -24,8 +24,7 @@ $app->get('/[{wishSeed}]', function (Request $request, Response $response, array
         ]);
       }
     } else {
-      $this->logger->info('GET /');
-      return $this->renderer->render($response, 'index.phtml');
+      return $response->withRedirect($indexURL, 303);
     }
   }
 
