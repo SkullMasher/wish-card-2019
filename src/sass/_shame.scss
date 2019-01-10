@@ -15,11 +15,13 @@ body {
 
 .place-center {
   display: grid;
-  place-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .site-hero {
   margin-bottom: $spacer-medium;
+  text-shadow: 0px 0px 5px $gray-900;
 }
 
 .site-footer {
@@ -29,32 +31,4 @@ body {
   margin-right: $spacer-small;
   margin-bottom: $spacer-small;
   margin-left: $spacer-small;
-}
-
-@keyframes pulse {
-  from {
-    transform: scale3d(1, 1, 1);
-  }
-
-  50% {
-    transform: scale3d(1.35, 1.35, 1.35);
-  }
-
-  to {
-    transform: scale3d(1, 1, 1);
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: .3;
-  }
-
-  to {
-    opacity: 1;
-  }
 }

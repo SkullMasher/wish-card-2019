@@ -287,3 +287,31 @@
     background: linear-gradient(to left, #CFDEF3, #E0EAFC);
   }
 }
+
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.35, 1.35, 1.35);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .3;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
