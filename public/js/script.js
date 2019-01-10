@@ -58,7 +58,7 @@ let formChecker = () => {
     // if (isWishCompleted()) {
     // }
     const data = JSON.stringify([$wishText.innerHTML, $wishSign.innerHTML])
-    postWish(`${location.href}topkek`, data)
+    postWish(location.href, data)
   })
 }
 
