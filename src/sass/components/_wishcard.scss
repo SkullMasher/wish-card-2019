@@ -3,13 +3,21 @@
   margin-right: $spacer-small;
   margin-bottom: $spacer-medium;
   margin-left: $spacer-small;
+  border: $spacer-tiny solid $white;
+  box-shadow : 0 3px 9px rgba(0, 0, 0, 0.48), 0 6px 14px rgba(0, 0, 0, 0.32);
+
+  @include respond-to("small-up") {
+    border: $spacer-small solid $white;
+  }
 
   @include respond-to("medium-up") {
     width: $medium;
+    border: $spacer-medium solid $white;
   }
 
   @include respond-to("large-up") {
     width: $large;
+    border: $spacer-large solid $white;
   }
 
   @include respond-to("extra-large-up") {
