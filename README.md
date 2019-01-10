@@ -10,8 +10,10 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 - ~~More animation~~
 - ~~Merge the front end build tools in a slim skeleton app~~
 - ~~Handle error on wish form with Javascript.~~
-- Add wish to database
-- tied things up
+- ~~Add wish to database~~
+- Add share links via mail, twitter, facebook.
+- Show wish when a correct url is entered
+- Tied things up
 
 Optional bonus style pouint :
 - optional: hills

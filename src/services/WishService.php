@@ -38,12 +38,11 @@ class WishService {
   public function getWish($seed) {
     $wishExist = $this->wish->where('seed', '=', $seed)->exists();
     $wish = $this->wish->where('seed', '=', $seed)->get();
-    $this->logger->info('wishService : ' . var_dump(empty($wish)));
+
     if ($wishExist) {
       return $wish;
     } else {
       return null;
     }
-    return $wish;
   }
 }

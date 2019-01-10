@@ -55,10 +55,10 @@ let formChecker = () => {
   })
 
   $wishSubmit.addEventListener('click', (event) => {
-    // if (isWishCompleted()) {
-    // }
-    const data = JSON.stringify([$wishText.innerHTML, $wishSign.innerHTML])
-    postWish(location.href, data)
+    if (isWishCompleted()) {
+      const data = JSON.stringify([$wishText.innerHTML, $wishSign.innerHTML])
+      postWish(location.href, data)
+    }
   })
 }
 
