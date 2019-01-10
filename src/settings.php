@@ -1,4 +1,6 @@
 <?php
+require 'settings/database.php'; // database settings/credentials
+
 return [
   'settings' => [
     'displayErrorDetails' => true, // set to false in production
@@ -15,15 +17,6 @@ return [
       'level' => \Monolog\Logger::DEBUG,
     ],
     // Eloquent settings
-    'db' => [
-      'driver' => 'mysql',
-      'host' => 'localhost',
-      'database' => 'wish_card_2019',
-      'username' => 'skullmasher',
-      'password' => '',
-      'charset'   => 'utf8',
-      'collation' => 'utf8_unicode_ci',
-      'prefix'    => '',
-    ]
+    'db' => $databaseSettings
   ],
 ];
