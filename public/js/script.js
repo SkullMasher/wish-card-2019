@@ -9,7 +9,6 @@ const greetingMessage = () => {
   console.log(`  # # #   `)
 }
 
-
 let formChecker = () => {
   // input selector
   let $wishText = document.querySelector('.js-wishText')
@@ -31,10 +30,17 @@ let formChecker = () => {
     }
   }
 
-  const request = async () => {
-      const response = await fetch(location);
-      const json = await response.json();
-      console.log(json);
+  const postWish = async (location, data) => {
+    const fetchSettings = {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: data
+    }
+    const response = await fetch(location, fetchSettings)
+    const json = await response.json()
+    console.log(json)
   }
 
   // Events
@@ -50,9 +56,10 @@ let formChecker = () => {
 
   $wishSubmit.addEventListener('click', (event) => {
     // if (isWishCompleted()) {
-
     // }
-    console.log(`${location.href}topkek`)
+    const data = JSON.stringify([$wishText.innerHTML, $wishSign.innerHTML])
+    // const data = [$wishText.innerHTML]
+    postWish(`${location.href}topkek`, data)
   })
 }
 
