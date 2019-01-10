@@ -3,6 +3,7 @@
   width: 10px;
   height: 10px;
   background-color: $white;
+  -webkit-clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
   clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
   align-self: flex-start;
   opacity: 0;

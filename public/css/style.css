@@ -2796,6 +2796,7 @@ body {
   margin-right: 1rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
+  text-shadow: 0px 0px 5px #212529;
 }
 
 .wishcard {
@@ -2869,6 +2870,7 @@ body {
   background-color: #fff;
   align-self: flex-end;
   margin-bottom: 4rem;
+  -webkit-clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
   clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
   animation: 5s fade infinite;
 }
@@ -2899,6 +2901,7 @@ body {
 .wishcard__stars:nth-child(6) {
   width: 10px;
   height: 10px;
+  -webkit-clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
   clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
   align-self: flex-start;
   opacity: 1;
@@ -2917,6 +2920,7 @@ body {
   height: 4px;
   opacity: 1;
   margin-top: 2rem;
+  -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
   animation: 5s .5s fade infinite;
 }
@@ -2947,6 +2951,7 @@ body {
 .wishcard__stars:nth-child(12) {
   width: 10px;
   height: 10px;
+  -webkit-clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
   clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
   opacity: .8;
   margin-bottom: 4rem;
@@ -2973,6 +2978,7 @@ body {
   align-self: flex-start;
   opacity: 1;
   margin-top: 2rem;
+  -webkit-clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
   clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
   animation: 4s 3s fade infinite;
 }
@@ -3028,6 +3034,7 @@ body {
 .wishcard__stars:nth-child(22) {
   width: 10px;
   height: 10px;
+  -webkit-clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
   clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
   margin-bottom: -4rem;
   animation: 4s .2s fade infinite;
@@ -3113,6 +3120,7 @@ body {
   width: 10px;
   height: 10px;
   background-color: #fff;
+  -webkit-clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
   clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
   align-self: flex-start;
   opacity: 0;
@@ -3225,6 +3233,7 @@ body {
   height: 18px;
   left: 18px;
   bottom: 14px;
+  -webkit-clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
   clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
   background-color: #fff;
 }
@@ -3419,6 +3428,7 @@ body {
   height: 35px;
   margin-bottom: -5px;
   background-color: #FCE415;
+  -webkit-clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
   clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
@@ -3426,12 +3436,14 @@ body {
   width: 100px;
   height: 50px;
   background-color: #0BC917;
+  -webkit-clip-path: polygon(35% 0, 66% 0, 100% 100%, 0% 100%);
   clip-path: polygon(35% 0, 66% 0, 100% 100%, 0% 100%);
 }
 
 .christmastree__triangle:nth-child(2) {
   width: 75px;
   height: 50px;
+  -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
   position: relative;
 }

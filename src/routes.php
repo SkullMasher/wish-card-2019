@@ -18,8 +18,8 @@ $app->get('/[{wishSeed}]', function (Request $request, Response $response, array
       } else {
         $this->logger->info('GET /' . $wishSeed);
         return $this->renderer->render($response, 'wish.phtml', [
-          'seed' => $wishSeed,
-          'message' => $wish->message,
+          'seed'      => $wishSeed,
+          'message'   => $wish->message,
           'signature' => $wish->signature
         ]);
       }

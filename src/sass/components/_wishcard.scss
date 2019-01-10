@@ -58,6 +58,7 @@
       background-color: $white;
       align-self: flex-end;
       margin-bottom: $spacer-large;
+      -webkit-clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
       clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
       animation: 5s fade infinite;
     }
@@ -88,6 +89,7 @@
     &:nth-child(6) {
       width: 10px;
       height: 10px;
+      -webkit-clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
       clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
       align-self: flex-start;
       opacity: 1;
@@ -106,6 +108,7 @@
       height: 4px;
       opacity: 1;
       margin-top: $spacer-medium;
+      -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
       clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
       animation: 5s .5s fade infinite;
     }
@@ -136,6 +139,7 @@
     &:nth-child(12) {
       width: 10px;
       height: 10px;
+      -webkit-clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
       clip-path: polygon(36% 40%, 50% 0, 63% 40%, 100% 50%, 63% 63%, 50% 100%, 36% 63%, 0 50%);
       opacity: .8;
       margin-bottom: $spacer-large;
@@ -162,6 +166,7 @@
       align-self: flex-start;
       opacity: 1;
       margin-top: $spacer-medium;
+      -webkit-clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
       clip-path: polygon(50% 40%, 100% 50%, 50% 60%, 0% 50%);
       animation: 4s 3s fade infinite;
     }
@@ -217,6 +222,7 @@
     &:nth-child(22) {
       width: 10px;
       height: 10px;
+      -webkit-clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
       clip-path: polygon(50% 0%, 60% 50%, 50% 100%, 40% 50%);
       margin-bottom: -$spacer-large;
       animation: 4s .2s fade infinite;
@@ -255,30 +261,6 @@
     margin-left: auto;
     max-width: 666px; // The number of the beast !!
   }
-
-  // &__hills {
-  //   position: absolute;
-  //   width: 300px;
-  //   height: 300px;
-  //   bottom: 0;
-  //   z-index: 0;
-  //   background-color: $gray-800;
-  //   clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
-  //   opacity: .5;
-
-  //   &:nth-child(2) {
-  //     width: 250px;
-  //     height: 250px;
-  //     right: 0;
-  //   }
-
-  //   &:nth-child(3) {
-  //     width: 250px;
-  //     height: 250px;
-  //     right: 0;
-  //     background-color: red;
-  //   }
-  // }
 
   &__ground {
     height: 100px;
