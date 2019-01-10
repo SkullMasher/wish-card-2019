@@ -9,11 +9,9 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 - ~~Move the snowman arm~~
 - ~~More animation~~
 - ~~Merge the front end build tools in a slim skeleton app~~
-- Handle error on wish form with Javascript.
-- Add CSRF protection dependencie
-- Add flash message dependencie
-- Add respect/validation dependencie
-- Add PostgreSQL dependencie
+- ~~Handle error on wish form with Javascript.~~
+- Add wish to database
+- tied things up
 
 Optional bonus style pouint :
 - optional: hills
