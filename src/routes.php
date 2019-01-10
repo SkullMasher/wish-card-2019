@@ -16,9 +16,3 @@ $app->post('/', function (Request $request, Response $response) {
 
   return $this->wish_service->createWish($data);
 });
-
-// $app->get('/[{wishid}]', function (Request $request, Response $response, array $args) {
-//   $this->logger->info('GET /wish/');
-
-//   return $this->renderer->render($response, 'wish.phtml', $args);
-// });
