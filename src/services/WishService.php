@@ -15,36 +15,20 @@ class WishService {
       return $s;
   }
 
-  private function sanitize_wish($text) {
-    $arr = [];
-    foreach ($text as $value) {
-      // $str = str_replace('<p>', '', $value);
-      // $str = str_replace('</p>', '<br />' , $value);
-      $str = filter_var($value, FILTER_SANITIZE_STRING);
-      $this->logger->info(json_encode($str));
-      array_push($arr, $str);
-    }
-
-    return $arr;
-  }
-
   public function addWish($data) {
     $dataCount = count($data);
 
     if ($dataCount === 2) {
       $seed = $this->mt_rand_str(6);
-      $sanitized_wish = $this->sanitize_wish($data);
-      $wish_message = $sanitized_wish[0];
-      $wish_signature = $sanitized_wish[1];
-
+      $wish_message = filter_var($data[0], FILTER_SANITIZE_STRING);
+      $wish_signature = filter_var($data[1], FILTER_SANITIZE_STRING);
       // Insert to wishes table
       $this->wish->seed = $seed;
       $this->wish->message = $wish_message;
       $this->wish->signature = $wish_signature;
       $this->wish->save();
 
-      // return a wish id
-      return json_encode($seed);
+      return json_encode($seed); // return a wish id
     } else {
       return json_encode('nope');
     }
