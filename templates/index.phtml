@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="Personnaliser et partager  votre carte de voeux 2019.">
+	<meta name="description" content="Personnaliser et partager votre carte de voeux 2019.">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Carte de voeux 2019</title>
 	<link rel="stylesheet" href="css/style.css">
@@ -110,17 +110,20 @@
           <p class="txtcenter">Votre voeux est pret ! <a class="btn btn--small btn--success" href="topkek" target="_blank">VOIR</a></p>
           <div class="grid has-gutter">
             <div class="share-wish__link">
-              <label for="share-wish-link">Lien vers votre voeux.</label>
-              <input class="share-wish__link" type="text" name="" value="" id="share-wish-link">
+              <label for="share-wish-link">Lien de votre voeux.</label>
+              <input class="share-wish__link" type="text" name="" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>" id="share-wish-link">
             </div>
-            <div class="share-wish__link">
-              <label for="share-wish-link">Lien vers votre voeux.</label>
-              <input class="share-wish__link" type="text" name="" value="" id="share-wish-link">
-
+            <div class="share-wish__social">
+              <p>Partager ce site</p>
+              <div class="flex-space-around">
+                <a href="mailto:?Subject=Créer une carte de voeu 2019&amp;Body=https://skullmasher.io/wish-card-2019">mail</a>
+                <a href="https://twitter.com/share?url=https://skullmasher.io/wish-card-2019" target="_blank">Twitter</a>
+                <a href="http://www.facebook.com/sharer.php?u=https://skullmasher.io/wish-card-2019" target="_blank">Facebook</a>
+              </div>
             </div>
           </div>
           <div class="mtm txtcenter">
-            <a class="btn btn--success" href="new">Créer un nouveaux voeux</a>
+            <a class="btn btn--success" href="new">Créer un nouveaux vœux</a>
           </div>
         </div>
 

@@ -19,6 +19,16 @@ body {
   align-items: center;
 }
 
+.flex-space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
 .site-hero {
   margin-bottom: $spacer-medium;
   text-shadow: 0px 0px 5px $gray-900;
