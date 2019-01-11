@@ -33,7 +33,7 @@ $app->get('/[{wishSeed}]', function (Request $request, Response $response, array
 })->setName('index');
 
 $app->post('/', function (Request $request, Response $response) {
-  $this->logger->info('POST /topkek');
+  $this->logger->info('POST /');
   $data = $request->getParsedBody();
 
   return $this->wish_service->addWish($data);
