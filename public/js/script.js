@@ -24,7 +24,7 @@ let formChecker = () => {
   const $wishSign = document.querySelector('.js-wishSign')
   const $wishSubmit = document.querySelector('.js-wishSubmit')
   const $wishWarn = document.querySelector('.js-wishWarn')
-  const $wishInputShare = document.querySelector('.js-shareWishLink')
+  const $wishShareLink = document.querySelectorAll('.js-shareWishLink')
   // states
   let wishTextIsDirty = false
   let wishSignIsDirty = false
@@ -33,11 +33,17 @@ let formChecker = () => {
     if (wishTextIsDirty && wishSignIsDirty) {
       $wishWarn.classList.add('text-blur-out')
       $wishSubmit.classList.remove('js-disabled')
-
       return true
     } else {
       return false
     }
+  }
+
+  const fillShareWish = (seed) => {
+    $wishShareLink.forEach((currentValue, currentIndex, listObj) => {
+      currentValue.href = currentValue.href + seed
+      console.log(currentValue.href)
+    })
   }
 
   const postWish = async (location, data) => {
@@ -49,8 +55,8 @@ let formChecker = () => {
       body: data
     }
     const response = await fetch(location, fetchSettings)
-    const json = await response.json()
-    console.log(json)
+    const seed = await response.json()
+    fillShareWish(seed)
   }
 
   // Events
@@ -70,8 +76,6 @@ let formChecker = () => {
       postWish(location.href, data)
     }
   })
-
-  $wishInputShare.addEventListener('click', () => selectText('share-wish-link'))
 }
 
 addEventListener('DOMContentLoaded', (event) => {
