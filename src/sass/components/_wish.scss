@@ -1,4 +1,16 @@
-.share-wish {
+.wishcard-submit {
+  align-self: center;
+}
+
+.wishcard-share {
+  position:absolute;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: $spacer-medium;
+  opacity: 0;
+  transform: translateX(-100000000px);
 
   &__link {
     display: flex;
@@ -13,7 +25,6 @@
   }
 
   &__social {
-    margin-top: $spacer-medium;
 
     @include respond-to("small-up") {
       margin-top: 0;
