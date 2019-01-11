@@ -1,8 +1,4 @@
 .share-wish {
-  [class*="btn"] {
-    color: $white;
-    text-decoration: none;
-  }
 
   &__link {
     display: flex;
@@ -12,6 +8,6 @@
     }
   }
   .share-wish__social {
-
+    margin-top: $spacer-medium;
   }
 }

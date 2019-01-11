@@ -9,6 +9,12 @@ body {
   grid-template-rows: 1fr auto;
 }
 
+// Don't apply the default link hover behavior when a link has a btn class
+a.btn {
+  color: $white;
+  text-decoration: none;
+}
+
 .font-charm {
   font-family: charm;
 }
@@ -17,11 +23,6 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-}
-
-.flex-space-between {
-  display: flex;
-  justify-content: space-between;
 }
 
 .flex-space-around {
