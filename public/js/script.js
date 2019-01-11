@@ -41,7 +41,6 @@ let formChecker = () => {
 
   const fillShareWish = (seed) => {
     $wishShareLink.forEach((element, index, list) => {
-      console.log(element)
       element.href = element.href + seed
 
       if (index === 1) {

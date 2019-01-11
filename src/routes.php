@@ -19,8 +19,8 @@ $app->get('/[{wishSeed}]', function (Request $request, Response $response, array
         $this->logger->info('GET /' . $wishSeed);
         return $this->renderer->render($response, 'wish.phtml', [
           'seed'      => $wishSeed,
-          'message'   => $wish->message,
-          'signature' => $wish->signature
+          'message'   => nl2br($wish->message),
+          'signature' => nl2br($wish->signature)
         ]);
       }
     } else {
