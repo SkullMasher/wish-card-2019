@@ -15,13 +15,32 @@ class WishService {
       return $s;
   }
 
+  private function strip_whitespace($str) {
+      return preg_replace('/\s+/', ' ', $str);
+  }
+
+  private function sanitize($data) {
+    $data_count = count($data);
+
+    for ($i=0; $i < $data_count; $i++) {
+      $data[$i] = trim($data[$i]);
+      $data[$i] = $this->strip_whitespace($data[$i]);
+      $data[$i] = str_replace("<br>", "\n", $data[$i]);
+      $data[$i] = filter_var($data[$i], FILTER_SANITIZE_STRING);
+      $this->logger->info($data[$i]);
+    }
+
+    return $data;
+  }
+
   public function addWish($data) {
     $dataCount = count($data);
 
     if ($dataCount === 2) {
-      $seed = $this->mt_rand_str(6);
-      $wish_message = filter_var($data[0], FILTER_SANITIZE_STRING);
-      $wish_signature = filter_var($data[1], FILTER_SANITIZE_STRING);
+      $seed = $this->mt_rand_str(6); // get a new seed
+      $sanitized_data = $this->sanitize($data);
+      $wish_message = $sanitized_data[0];
+      $wish_signature = $sanitized_data[1];
       // Insert to wishes table
       $this->wish->seed = $seed;
       $this->wish->message = $wish_message;
