@@ -8,7 +8,11 @@
     }
   }
 
-  .share-wish__social {
+  &__link {
+    margin-bottom: 0;
+  }
+
+  &__social {
     margin-top: $spacer-medium;
 
     @include respond-to("small-up") {

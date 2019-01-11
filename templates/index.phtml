@@ -100,21 +100,21 @@
         </div>
       </main>
       <footer class="mbm">
-        <div class="is-hidden">
+        <div class="">
           <p class="color--muted js-wishWarn txtcenter">Pour partager votre voeux modifier le texte et la signature.</p>
           <div class="place-center">
             <button class="btn btn--success btn--big js-wishSubmit js-disabled">Partager mon voeux</button>
           </div>
         </div>
         <div class="share-wish place-center">
-          <p class="txtcenter">Votre voeux est pret à être partager ! <a class="btn btn--small btn--success" href="topkek" target="_blank">VOIR</a></p>
-          <div class="grid has-gutter">
+          <p class="txtcenter mbm">Votre voeux est pret à être partager ! <a class="btn btn--small btn--success" href="topkek" target="_blank">VOIR</a></p>
+          <div class="grid has-gutter-l mbm">
             <div class="share-wish__link">
-              <label for="share-wish-link">Lien de votre voeux.</label>
-              <input class="share-wish__link" type="text" name="" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?>" id="share-wish-link">
+              <p class="mbn">Lien de votre voeux.</p>
+              <p class="share-wish__link js-shareWishLink" id="share-wish-link"><a href="topkek" target="_blank"><?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"] ?></a></p>
             </div>
             <div class="share-wish__social">
-              <p>Partager ce site</p>
+              <p class="mbn">Partager ce site</p>
               <div class="flex-space-around">
                 <a href="mailto:?Subject=Créer une carte de voeu 2019&amp;Body=https://skullmasher.io/wish-card-2019">mail</a>
                 <a href="https://twitter.com/share?url=https://skullmasher.io/wish-card-2019" target="_blank">Twitter</a>
@@ -122,11 +122,10 @@
               </div>
             </div>
           </div>
-          <div class="mtm txtcenter">
+          <div class="txtcenter">
             <a class="btn btn--success" href="new">Créer un nouveaux vœux</a>
           </div>
         </div>
-
       </footer>
     </div>
   </div>
