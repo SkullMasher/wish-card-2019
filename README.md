@@ -17,8 +17,8 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 - Tied things up (a bit more)
 
 Optional bonus style pouint :
-- optional: hills
-- Make the wishcard appear after a first page with the book effect.
+- Hills
+- Make the wishcard appear with an openning book effect.
 
 ## Credits, Inspiration and tools
 

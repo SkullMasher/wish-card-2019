@@ -3531,4 +3531,18 @@ body {
   }
 }
 
+.share-wish [class*="btn"] {
+  color: #fff;
+  text-decoration: none;
+}
+
+.share-wish__link {
+  display: flex;
+  flex-direction: column;
+}
+
+.share-wish__link input {
+  color: #212529;
+}
+
 /*# sourceMappingURL=style.map.css */

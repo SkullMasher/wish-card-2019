@@ -99,15 +99,38 @@
           </div>
         </div>
       </main>
-      <footer class="mbm flex-container-v">
-        <p class="color--muted js-wishWarn txtcenter">Pour partager votre voeux modifier le texte et la signature.</p>
-        <div class="place-center">
-          <button class="btn btn--success btn--big js-wishSubmit js-disabled">Partager mon voeux</button>
+      <footer class="mbm">
+        <div class="is-hidden">
+          <p class="color--muted js-wishWarn txtcenter">Pour partager votre voeux modifier le texte et la signature.</p>
+          <div class="place-center">
+            <button class="btn btn--success btn--big js-wishSubmit js-disabled">Partager mon voeux</button>
+          </div>
         </div>
+        <div class="share-wish place-center">
+          <p class="txtcenter">Votre voeux est pret ! <a class="btn btn--small btn--success" href="topkek">VOIR</a></p>
+          <div class="grid has-gutter">
+            <div class="share-wish__link">
+              <label for="share-wish-link">Lien vers votre voeux.</label>
+              <input class="share-wish__link" type="text" name="" value="" id="share-wish-link">
+            </div>
+            <div class="share-wish__link">
+              <label for="share-wish-link">Lien vers votre voeux.</label>
+              <input class="share-wish__link" type="text" name="" value="" id="share-wish-link">
+
+            </div>
+          </div>
+          <div class="mtm txtcenter">
+            <a class="btn btn--success" href="new">Créer un nouveaux voeux</a>
+          </div>
+        </div>
+
       </footer>
     </div>
   </div>
-  <?php require_once('footer.phtml') ?>
+  <footer class="site-footer">
+    <?php require_once('footer_content.phtml') ?>
+  </footer>
+
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
