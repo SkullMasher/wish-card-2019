@@ -21,7 +21,7 @@ let formChecker = () => {
   // functions
   const isWishCompleted = () => {
     if (wishTextIsDirty && wishSignIsDirty) {
-      $wishWarn.classList.add('is-hidden')
+      $wishWarn.classList.add('text-blur-out')
       $wishSubmit.classList.remove('js-disabled')
 
       return true
