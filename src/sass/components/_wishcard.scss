@@ -241,9 +241,13 @@
   }
 
   &__message {
+    width: 100%;
     margin-bottom: $spacer-small;
     font-family: charm;
     @include font-size(h2);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 
     &--editable {
       // border-bottom: 1px solid $gray-400;

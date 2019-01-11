@@ -13,8 +13,10 @@ Voeux de fin d'année interactif réalisé entièrement en css. L'utilisateur co
 - ~~Add wish to database~~
 - ~~Show wish when a correct url is entered~~
 - ~~Tied things up~~
-- Add share links via mail, twitter, facebook
+- ~~Add share links via mail, twitter, facebook~~
 - Tied things up (a bit more)
+	- handle message overflow
+	- try to include original client line break
 
 Optional bonus style pouint :
 - Hills

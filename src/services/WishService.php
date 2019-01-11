@@ -18,8 +18,8 @@ class WishService {
   public function addWish($data) {
     $dataCount = count($data);
     $seed = $this->mt_rand_str(6);
-    $wish_message = $data[0];
-    $wish_signature = $data[1];
+    $wish_message = filter_var(strip_tags($data[0]), FILTER_SANITIZE_STRING);
+    $wish_signature = filter_var(strip_tags($data[1]), FILTER_SANITIZE_STRING);
 
     $this->logger->info($wish_message);
 
