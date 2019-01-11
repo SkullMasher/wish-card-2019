@@ -18,8 +18,10 @@ class WishService {
   public function addWish($data) {
     $dataCount = count($data);
     $seed = $this->mt_rand_str(6);
-    $wish_message = filter_var($data[0], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $wish_signature = filter_var($data[1], FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $wish_message = $data[0];
+    $wish_signature = $data[1];
+
+    $this->logger->info($wish_message);
 
     if ($dataCount === 2) {
       // Insert to wishes table

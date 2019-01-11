@@ -44,15 +44,13 @@
               <div class="wishcard__stars"></div>
               <div class="wishcard__moon"></div>
             </header>
-            <main class="wrapper wrapper--small">
-              <div class="font-charm">
-                <div class="wishcard__message js-wishText" contenteditable="">
-                  <p>Chère visiteur,</p>
-                  <p>Compose ton message ici pour partager tes meilleurs vœux.</p>
-                </div>
-                <div class="wishcard__signature js-wishSign" contenteditable="">
-                  <p>Ma signature</p>
-                </div>
+            <main class="wrapper wrapper--small font-charm">
+              <div class="wishcard__message wishcard__message--editable js-wishText" contenteditable="">
+                <p>Chère visiteur,</p>
+                <p>Compose ton message ici pour partager tes meilleurs vœux.</p>
+              </div>
+              <div class="wishcard__signature wishcard__signature--editable js-wishSign" contenteditable="">
+                <p>Ma signature</p>
               </div>
             </main>
             <footer class="wishcard__floor">
@@ -132,7 +130,6 @@
   <footer class="site-footer">
     <?php require_once('footer_content.phtml') ?>
   </footer>
-
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

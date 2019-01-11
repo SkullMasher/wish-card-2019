@@ -8,15 +8,6 @@ const greetingMessage = () => {
   console.log(`  #####    github.com/SkullMasher/wish-card-2019`)
   console.log(`  # # #   `)
 }
-// Helper to select text
-let selectText = (element) => {
-  element = document.getElementById(element)
-  const selection = window.getSelection()
-  const range = document.createRange()
-  range.selectNodeContents(element)
-  selection.removeAllRanges()
-  selection.addRange(range)
-}
 
 let formChecker = () => {
   // input selector
@@ -88,6 +79,8 @@ let formChecker = () => {
 
   $wishSubmitBtn.addEventListener('click', (event) => {
     if (isWishCompleted()) {
+      $wishText.removeAttribute('contenteditable')
+      $wishSign.removeAttribute('contenteditable')
       const data = JSON.stringify([$wishText.innerHTML, $wishSign.innerHTML])
       postWish(location.href, data)
     }

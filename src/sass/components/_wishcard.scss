@@ -244,12 +244,21 @@
     margin-bottom: $spacer-small;
     font-family: charm;
     @include font-size(h2);
+
+    &--editable {
+      // border-bottom: 1px solid $gray-400;
+    }
   }
 
   &__signature {
+    display: flex;
+    justify-content: flex-end;
     margin-bottom: $spacer-large;
-    text-align: right;
     @include font-size(h3);
+
+    &--editable p {
+      // border-bottom: 1px solid $gray-400;
+    }
   }
 
   &__floor {
