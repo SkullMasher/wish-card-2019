@@ -2814,11 +2814,11 @@ a.btn {
 }
 
 .slide-out-blurred-left {
-  animation: slide-out-blurred-left 0.45s cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
+  animation: slide-out-blurred-left 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) both;
 }
 
 .slide-in-blurred-right {
-  animation: slide-in-blurred-right 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: slide-in-blurred-right 0.75s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 .text-blur-out {
