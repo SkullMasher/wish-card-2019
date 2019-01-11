@@ -405,11 +405,11 @@ body {
 /* Links */
 a {
   color: #5CB85C;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:focus, a:hover, a:active {
-  color: #3d8b3d;
+  color: #449d44;
   text-decoration: underline;
 }
 
