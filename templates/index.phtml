@@ -12,8 +12,7 @@
     <div>
       <header>
         <div class="site-hero wrapper wrapper--small">
-          <h1>Carte de vœux 2019</h1>
-          <p>Cliquer sur le texte dans le cadre pour composer votre message et ajouter votre signature. Une fois terminé cliquer sur le bouton partager situé après votre carte de vœux votre vœux.</p>
+          <h1 class="mbn">Carte de vœux 2019</h1>
         </div>
       </header>
       <main>
@@ -45,10 +44,7 @@
               <div class="wishcard__moon"></div>
             </header>
             <main class="wrapper wrapper--small font-charm">
-              <div class="wishcard__message wishcard__message--editable js-wishText" contenteditable="">
-                Cher visiteur,<br>
-                Compose ton message ici pour partager tes meilleurs vœux.
-              </div>
+              <div class="wishcard__message wishcard__message--editable js-wishText" contenteditable="">Cher visiteur,<br>Compose ton message ici pour partager tes meilleurs vœux.</div>
               <div class="wishcard__signature wishcard__signature--editable js-wishSign" contenteditable="">
                 <p>Ma signature</p>
               </div>
@@ -99,13 +95,14 @@
       </main>
       <footer class="wishcard__validation">
         <div class="wishcard__submit wrapper wrapper--small js-wishSubmit">
-          <p class="color--muted js-wishWarn txtcenter">Pour partager votre vœux modifier le texte et la signature.</p>
+          <div class="mbm">
+            <p class="alert alert--ghost js-wishWarn">Ciquer sur le texte et la signature pour modifier votre vœux avant de la partager.</p>
+          </div>
           <div class="place-center">
             <button class="btn btn--success btn--big js-wishSubmitBtn js-disabled">Partager mon vœux</button>
           </div>
         </div>
         <div class="wishcard__share wrapper wrapper--small js-wishShare">
-          <p class="txtcenter mbm">Votre vœux est pret à être partager ! <a class="btn btn--small btn--success js-shareWishLink" href="" target="_blank">VOIR</a></p>
           <div class="grid has-gutter mbm">
             <div class="share-wish__link">
               <p class="mbn">Lien de votre vœux.</p>

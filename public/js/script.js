@@ -42,10 +42,7 @@ let formChecker = () => {
   const fillShareWish = (seed) => {
     $wishShareLink.forEach((element, index, list) => {
       element.href = element.href + seed
-
-      if (index === 1) {
-        element.text = element.href
-      }
+      element.text = element.href
     })
   }
 
@@ -67,6 +64,11 @@ let formChecker = () => {
 
   // Events
   $wishText.addEventListener('input', (event) => {
+    wishTextIsDirty = true
+    isWishCompleted()
+  })
+
+  $wishText.addEventListener('click', (event) => {
     wishTextIsDirty = true
     isWishCompleted()
   })
