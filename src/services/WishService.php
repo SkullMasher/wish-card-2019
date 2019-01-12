@@ -23,10 +23,14 @@ class WishService {
     $data_count = count($data);
 
     for ($i=0; $i < $data_count; $i++) {
-      $data[$i] = trim($data[$i]);
+      // Strip whitespace in and out
+      // $data[$i] = trim($data[$i]);
       $data[$i] = $this->strip_whitespace($data[$i]);
+      // Convert new lines
       $data[$i] = str_replace("<br>", "\n", $data[$i]);
+      $data[$i] = str_replace("</p>", "\n", $data[$i]);
       $data[$i] = str_replace("</div>", "\n", $data[$i]);
+      // Avoid XSS
       $data[$i] = filter_var($data[$i], FILTER_SANITIZE_STRING);
       $this->logger->info($data[$i]);
     }
