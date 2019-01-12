@@ -24,7 +24,6 @@ class WishService {
 
     for ($i=0; $i < $data_count; $i++) {
       // Strip whitespace in and out
-      // $data[$i] = trim($data[$i]);
       $data[$i] = $this->strip_whitespace($data[$i]);
       // Convert new lines
       $data[$i] = str_replace("<br>", "\n", $data[$i]);
