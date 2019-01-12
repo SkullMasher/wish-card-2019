@@ -26,6 +26,7 @@ class WishService {
       $data[$i] = trim($data[$i]);
       $data[$i] = $this->strip_whitespace($data[$i]);
       $data[$i] = str_replace("<br>", "\n", $data[$i]);
+      $data[$i] = str_replace("</div>", "\n", $data[$i]);
       $data[$i] = filter_var($data[$i], FILTER_SANITIZE_STRING);
       $this->logger->info($data[$i]);
     }
